@@ -61,12 +61,12 @@ const submenuData = {
   //     href: "/services/crm",
   //   },
   // ],
-  Marketing: [
+  Sales: [
     {
       icon: (
         <MdOutlineAttachMoney className="mr-2 lg:text-2xl text-purple-700" />
       ),
-      title: "Marketing",
+      title: "Sales Engine",
       description:
         "Sales drive revenue by promoting products or services to meet customer needs.",
       href: "/marketing",
@@ -181,26 +181,24 @@ export default function Header() {
   return (
     <>
       <header
-        className={`z-[100] fixed w-full top-0 transition-shadow ${
-          isAIPage
+        className={`z-[100] fixed w-full top-0 transition-shadow ${isAIPage
             ? "bg-transparent"
             : isOverlayOpen || isScrolled
-            ? "bg-transparent "
-            : "bg-transparent"
-        }`}
+              ? "bg-transparent "
+              : "bg-transparent"
+          }`}
       >
         <nav className="mx-auto container">
           <div className="relative px-4 max-w-screen-xl mx-auto lg:px-16 h-20 flex items-center justify-between">
             <div className="flex items-center space-x-12">
               <Link
                 href="/"
-                className={`flex items-center gap-3  border border-border py-2 px-4 rounded-2xl ${
-                  isAIPage
+                className={`flex items-center gap-3  border border-border py-2 px-4 rounded-2xl ${isAIPage
                     ? "bg-black text-white"
                     : isOverlayOpen || isScrolled
-                    ? "bg-white text-text-secondary"
-                    : "bg-white text-text-secondary"
-                }`}
+                      ? "bg-white text-text-secondary"
+                      : "bg-white text-text-secondary"
+                  }`}
               >
                 {isAIPage ? (
                   <img
@@ -220,24 +218,22 @@ export default function Header() {
 
               {/* Desktop menu: show from xl and above */}
               <div
-                className={`hidden xl:flex xl:items-center  py-3 px-4 border border-border rounded-2xl xl:space-x-8  ${
-                  isAIPage
+                className={`hidden xl:flex xl:items-center  py-3 px-4 border border-border rounded-2xl xl:space-x-8  ${isAIPage
                     ? "bg-black"
                     : isOverlayOpen || isScrolled
-                    ? "bg-white"
-                    : "bg-white"
-                }`}
+                      ? "bg-white"
+                      : "bg-white"
+                  }`}
                 ref={desktopDropdownRef}
               >
                 <Link
                   href="/"
-                  className={` transition-colors relative ${
-                    isAIPage
+                  className={` transition-colors relative ${isAIPage
                       ? "text-white"
                       : isActive("/") // Your existing logic
-                      ? "text-primary"
-                      : "text-text-primary hover:text-primary"
-                  }`}
+                        ? "text-primary"
+                        : "text-text-primary hover:text-primary"
+                    }`}
                 >
                   Home
                   {isActive("/") && (
@@ -257,14 +253,13 @@ export default function Header() {
                     }
                     aria-haspopup="true"
                     aria-expanded={desktopDropdown === "apps"}
-                    className={`flex items-center  cursor-pointer transition-colors ${
-                      pathname.includes("/ai") ||
-                      pathname.includes("/marketing")
+                    className={`flex items-center  cursor-pointer transition-colors ${pathname.includes("/ai") ||
+                        pathname.includes("/marketing")
                         ? "text-white"
                         : pathname.startsWith("/services")
-                        ? "text-primary"
-                        : "text-text-primary hover:text-primary"
-                    }`}
+                          ? "text-primary"
+                          : "text-text-primary hover:text-primary"
+                      }`}
                   >
                     Apps <FiChevronDown className="ml-1" />
                   </button>
@@ -282,13 +277,12 @@ export default function Header() {
 
                 <Link
                   href="/ai"
-                  className={`  relative transition-colors ${
-                    pathname.includes("/marketing")
+                  className={`  relative transition-colors ${pathname.includes("/marketing")
                       ? "text-white"
                       : pathname.startsWith("/ai")
-                      ? "text-primary"
-                      : "text-text-primary hover:text-primary"
-                  }`}
+                        ? "text-primary"
+                        : "text-text-primary hover:text-primary"
+                    }`}
                 >
                   AI
                   {isActive("/ai") && (
@@ -301,13 +295,12 @@ export default function Header() {
 
                 <Link
                   href="/pricing"
-                  className={` transition-colors relative ${
-                    isAIPage
+                  className={` transition-colors relative ${isAIPage
                       ? "text-white"
                       : isActive("/pricing") // Your existing logic
-                      ? "text-primary"
-                      : "text-text-primary hover:text-primary"
-                  }`}
+                        ? "text-primary"
+                        : "text-text-primary hover:text-primary"
+                    }`}
                 >
                   Pricing
                   {isActive("/pricing") && (
@@ -327,15 +320,14 @@ export default function Header() {
                     }
                     aria-haspopup="true"
                     aria-expanded={desktopDropdown === "apps"}
-                    className={`flex items-center  cursor-pointer transition-colors ${
-                      pathname.includes("/ai") ||
-                      pathname.includes("/marketing")
+                    className={`flex items-center  cursor-pointer transition-colors ${pathname.includes("/ai") ||
+                        pathname.includes("/marketing")
                         ? "text-white"
                         : pathname.startsWith("/optimization") ||
                           pathname.startsWith("/partner-program")
-                        ? "text-primary"
-                        : "text-text-primary hover:text-primary"
-                    }`}
+                          ? "text-primary"
+                          : "text-text-primary hover:text-primary"
+                      }`}
                   >
                     Other services <FiChevronDown className="ml-1" />
                   </button>
@@ -353,13 +345,12 @@ export default function Header() {
 
                 <Link
                   href="/help"
-                  className={` transition-colors relative ${
-                    isAIPage
+                  className={` transition-colors relative ${isAIPage
                       ? "text-white"
                       : isActive("/help") // Your existing logic
-                      ? "text-primary"
-                      : "text-text-primary hover:text-primary"
-                  }`}
+                        ? "text-primary"
+                        : "text-text-primary hover:text-primary"
+                    }`}
                 >
                   Help
                   {isActive("/help") && (
@@ -376,11 +367,10 @@ export default function Header() {
             <div className="flex max-w-full xl:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className={`p-2  ${
-                  isAIPage
+                className={`p-2  ${isAIPage
                     ? "text-white"
                     : "text-text-primary hover:text-primary"
-                }`}
+                  }`}
                 aria-label="Open menu"
               >
                 <FiMenu size={24} />
@@ -389,7 +379,7 @@ export default function Header() {
 
             {/* Right buttons: show from xl and above */}
             <div className="hidden xl:flex items-center  space-x-4">
-              <Button variant="outline" href="/login">
+              <Button className="bg-white" variant="outline" href="/login">
                 Sign in
               </Button>
               <Button variant="solid" href="/get-started">
@@ -525,7 +515,7 @@ export default function Header() {
                     <Button
                       variant="outline"
                       href="/login"
-                      className="w-full text-center mt-4"
+                      className="w-full text-center mt-4 bg-white"
                     >
                       Sign in
                     </Button>

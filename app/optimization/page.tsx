@@ -196,7 +196,7 @@ export default function page() {
         <div className="container mx-auto py-16 relative px-6  lg:px-10 xl:px-24 2xl:max-w-screen-xl 2xl:px-6">
           <div className="text-center mb-12">
             <h2 className="component-heading  max-w-6xl mx-auto mb-3">
-              construction
+              Construction
             </h2>
           </div>
           <StepsGrid aiSteps={constructionSteps} lgCols={3}  />
@@ -206,7 +206,7 @@ export default function page() {
         <div className="container mx-auto py-16 relative px-6  lg:px-10 xl:px-24 2xl:max-w-screen-xl 2xl:px-6">
           <div className="text-center mb-12">
             <h2 className="component-heading  max-w-6xl mx-auto mb-3">
-              software development
+              Software Development
             </h2>
           </div>
           <StepsGrid aiSteps={softwareDevSteps} lgCols={3}  />

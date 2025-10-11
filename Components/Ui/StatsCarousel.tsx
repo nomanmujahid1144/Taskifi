@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import type { SwiperOptions } from "swiper/types";
+import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -44,11 +44,18 @@ const stats = [
 ];
 
 export default function StatsCarousel() {
-  const prevRef = useRef<HTMLButtonElement | null>(null);
-  const nextRef = useRef<HTMLButtonElement | null>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+
+  const handlePrev = () => {
+    swiperRef.current?.slidePrev();
+  };
+
+  const handleNext = () => {
+    swiperRef.current?.slideNext();
+  };
 
   return (
     <section className="bg-white">
@@ -58,29 +65,8 @@ export default function StatsCarousel() {
           className="!py-12 !pr-4"
           slidesPerView={1}
           // autoplay={{ delay: 3000, disableOnInteraction: false }}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            if (typeof swiper.params.navigation !== "boolean") {
-              const navigation = swiper.params.navigation;
-              if (navigation) {
-                navigation.prevEl = prevRef.current;
-                navigation.nextEl = nextRef.current;
-              }
-            }
-          }}
-          onInit={(swiper) => {
-            if (typeof swiper.params.navigation !== "boolean") {
-              const navigation = swiper.params.navigation;
-              if (navigation) {
-                navigation.prevEl = prevRef.current;
-                navigation.nextEl = nextRef.current;
-              }
-              swiper.navigation?.init();
-              swiper.navigation?.update();
-            }
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
           onSlideChange={(swiper) => {
             setIsBeginning(swiper.isBeginning);
@@ -121,7 +107,7 @@ export default function StatsCarousel() {
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-4 mt-10">
           <button
-            ref={prevRef}
+            onClick={handlePrev}
             disabled={isBeginning}
             className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors
               ${isBeginning
@@ -131,7 +117,7 @@ export default function StatsCarousel() {
             <LuChevronLeft className="w-6 h-6" />
           </button>
           <button
-            ref={nextRef}
+            onClick={handleNext}
             disabled={isEnd}
             className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors
               ${isEnd

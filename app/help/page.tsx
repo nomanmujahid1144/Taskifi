@@ -57,7 +57,7 @@ const tags = [
   "Adding members",
 ];
 const topics = [
-  { icon: FaMagic, title: "AI Project Planner" , description: "Leverage AI to create comprehensive project plans." },
+  { icon: FaMagic, title: "AI Project Planner", description: "Leverage AI to create comprehensive project plans." },
   { icon: FaUserShield, title: "Roles & Permissions", description: "Manage user roles and permissions." },
   { icon: FaReceipt, title: "Expense Submissions", description: "Streamline your expense." },
   { icon: FaRobot, title: "Using Taskifi AI", description: "Discover how to leverage AI features." },
@@ -401,26 +401,26 @@ const helpContent: Record<string, HelpStep[]> = {
       images: ["/homeHero/Attendance.webp"],
     },
   ],
-    "expense-submissions": [
-      {
-        heading: "Step 1 – Submit Expense Details",
-        description:
-          "Fill out the expense form with all required details, including amount, category, and attach relevant receipts. Ensure accuracy to speed up approval.",
-        images: ["/homeHero/Board.webp"],
-      },
-      {
-        heading: "Step 2 – Track Submission Status",
-        description:
-          "After submitting, monitor the approval status in your dashboard. You’ll receive notifications for any required actions or updates.",
-        images: ["/homeHero/Status.webp"],
-      },
-      {
-        heading: "Step 3 – Get Reimbursed",
-        description:
-          "Once approved, your expense will be processed for reimbursement. You can view payment details and history in your account.",
-        images: ["/homeHero/Attendance.webp"],
-      },
-    ],
+  "expense-submissions": [
+    {
+      heading: "Step 1 – Submit Expense Details",
+      description:
+        "Fill out the expense form with all required details, including amount, category, and attach relevant receipts. Ensure accuracy to speed up approval.",
+      images: ["/homeHero/Board.webp"],
+    },
+    {
+      heading: "Step 2 – Track Submission Status",
+      description:
+        "After submitting, monitor the approval status in your dashboard. You’ll receive notifications for any required actions or updates.",
+      images: ["/homeHero/Status.webp"],
+    },
+    {
+      heading: "Step 3 – Get Reimbursed",
+      description:
+        "Once approved, your expense will be processed for reimbursement. You can view payment details and history in your account.",
+      images: ["/homeHero/Attendance.webp"],
+    },
+  ],
   "ocr-ai": [
     {
       heading: "Step 1 – Upload Documents",
@@ -658,9 +658,8 @@ export default function HelpCenter() {
     <div className="flex flex-col md:flex-row min-h-screen bg-white text-gray-800 pt-20 relative xl:container mx-auto">
       {/* Sidebar */}
       <aside
-        className={`fixed lg:!sticky max-h-screen overflow-y-scroll lg:pb-20 z-40 top-0 lg:top-20 left-0 2xl:w-xs xl:w-72 lg:w-64 h-full bg-white border-r border-gray-200 p-4 transform transition-transform duration-300 ease-in-out ${
-          sidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:static md:translate-x-0 md:block`}
+        className={`fixed lg:!sticky max-h-screen overflow-y-scroll scrollbar-hide lg:pb-20 z-40 top-0 lg:top-20 left-0 2xl:w-xs xl:w-72 lg:w-64 h-full bg-white border-r border-gray-200 p-4 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } md:static md:translate-x-0 md:block`}
       >
         <button
           onClick={() => setSidebarOpen(false)}
@@ -759,7 +758,7 @@ export default function HelpCenter() {
                 Popular Topics (Short Version) Getting Started
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {topics.map(({ icon: Icon, title , description }) => (
+                {topics.map(({ icon: Icon, title, description }) => (
                   <button
                     key={title}
                     onClick={() => setActiveSlug(slugify(title))}
@@ -770,7 +769,7 @@ export default function HelpCenter() {
                       {title}
                     </h3>
                     <p className="text-text-secondary text-sm sm:text-base md:text-lg w-full text-left lg:w-3/4">
-                      {description }
+                      {description}
                     </p>
                   </button>
                 ))}

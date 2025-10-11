@@ -32,7 +32,7 @@ const quoteData = [
   },
   {
     title:
-      "2.Plan Projects With <span class='animate-gradient'>AI Precision</span>",
+      "3.Plan Projects With <span class='animate-gradient'>AI Precision</span>",
     description:
       "From launches to client deliverables, Taskifi adapts. Build workflows, track milestones, and manage teams—all powered by AI-driven project budgeting to keep projects on track.",
     features: [
