@@ -21,7 +21,7 @@ export default function Button({
   type = "button",
 }: ButtonProps) {
   const baseClasses =
-    "rounded-2xl px-6 py-3  font-semibold transition-colors duration-200";
+    "rounded-full px-6 py-3  font-semibold transition-colors duration-200";
   const variantClasses =
     variant === "solid"
       ? "bg-gradient-primary text-white "
