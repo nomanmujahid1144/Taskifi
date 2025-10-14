@@ -29,7 +29,7 @@ export default function Button({
       ? "bg-white text-primary border border-primary "
       : "border border-primary text-primary hover-white-button ";
 
-  const combined = clsx(baseClasses, variantClasses, className);
+  const combined = clsx(className, baseClasses, variantClasses);
 
   if (href) {
     return (

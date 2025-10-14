@@ -379,10 +379,10 @@ export default function Header() {
 
             {/* Right buttons: show from xl and above */}
             <div className="hidden xl:flex items-center  space-x-4">
-              <Button className="bg-white" variant="outline" href="/login">
+              <Button className="bg-white !rounded-2xl" variant="outline" href="/login">
                 Sign in
               </Button>
-              <Button variant="solid" href="/get-started">
+              <Button variant="solid" className="!rounded-2xl" href="/get-started">
                 Get started
               </Button>
             </div>
