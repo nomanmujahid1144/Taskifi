@@ -379,7 +379,7 @@ export default function Header() {
 
             {/* Right buttons: show from xl and above */}
             <div className="hidden xl:flex items-center  space-x-4">
-              <Button className="bg-white !rounded-2xl" variant="outline" href="/login">
+              <Button className="bg-white !rounded-2xl" variant="outline" href="https://app.taskifi.io/signin">
                 Sign in
               </Button>
               <Button variant="solid" className="!rounded-2xl" href="/get-started">
@@ -514,7 +514,7 @@ export default function Header() {
                   <div className="flex flex-col mt-4 space-y-2">
                     <Button
                       variant="outline"
-                      href="/login"
+                      href="https://app.taskifi.io/signin"
                       className="w-full text-center mt-4 bg-white"
                     >
                       Sign in

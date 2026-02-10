@@ -32,6 +32,14 @@ export default function Button({
   const combined = clsx(className, baseClasses, variantClasses);
 
   if (href) {
+    const isExternal = href.startsWith("http");
+    if (isExternal) {
+      return (
+        <a href={href} className={combined} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={combined}>
         {children}
