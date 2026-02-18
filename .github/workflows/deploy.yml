@@ -1,25 +1,25 @@
-name: Deploy to Production
+name: Deploy to EC2
 
 on:
   push:
     branches: 
-      - main  # Triggers when you push to 'main' branch
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     
     steps:
-      - name: Deploy to EC2 via SSH
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            cd ~/taskifi
-            git pull origin main
-            npm install --production
-            npm run build
-            pm2 restart taskifi
-            pm2 save
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Install dependencies
+        run: npm ci --production
+      
+      - name: Build Next.js
+        run: npm run build
+      
+      - name: Restart PM2
+        run: |
+          pm2 restart taskifi || pm2 start npm --name "taskifi" -- start -- --port 3000
+          pm2 save
