@@ -2,15 +2,22 @@
 
 import { useState } from "react";
 
-export default function BillingToggle() {
-  const [billingType, setBillingType] = useState("yearly");
+type BillingToggleProps = {
+  billingType?: "monthly" | "yearly";
+  onBillingTypeChange?: (type: "monthly" | "yearly") => void;
+};
+
+export default function BillingToggle({ billingType: controlledBilling, onBillingTypeChange }: BillingToggleProps) {
+  const [internalBilling, setInternalBilling] = useState<"monthly" | "yearly">("yearly");
+  const billingType = controlledBilling ?? internalBilling;
+  const setBillingType = onBillingTypeChange ?? setInternalBilling;
 
   return (
     <div className="relative inline-flex items-center space-x-2 bg-[#F9FAFB] border border-[#F2F4F7] rounded-lg p-1">
       {/* Discount Tag */}
       <div className="absolute -top-12 left-0 -rotate-12 flex flex-col items-center">
         <div className="bg-primary text-white text-xs font-semibold px-4 py-2 rounded-full">
-          30% OFF
+          20% OFF
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

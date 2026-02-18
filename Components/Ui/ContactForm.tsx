@@ -13,19 +13,27 @@ export default function ContactForm() {
       </div>
 
       <div className="max-w-5xl mx-auto bg-white px-4 md:px-8 py-8 rounded-xl shadow-2xl ring-1 ring-gray-100">
-        <form className="space-y-6">
+        <form
+          action="https://submit-form.com/Qc9XSssJR"
+          method="POST"
+          className="space-y-6"
+        >
           {/* Name */}
           <div>
             <label className="block font-medium text-gray-800 mb-1">Name</label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
+                name="firstName"
                 type="text"
                 placeholder="First name"
+                required
                 className="w-full border border-gray-300  rounded-md px-4 py-2"
               />
               <input
+                name="lastName"
                 type="text"
                 placeholder="Last name"
+                required
                 className="w-full border border-gray-300 rounded-md px-4 py-2"
               />
             </div>
@@ -35,8 +43,10 @@ export default function ContactForm() {
           <div>
             <label className="block font-medium text-gray-800 mb-1">Email address</label>
             <input
+              name="email"
               type="email"
               placeholder="Email address"
+              required
               className="w-full border border-gray-300 rounded-md px-4 py-2"
             />
           </div>
@@ -45,6 +55,7 @@ export default function ContactForm() {
           <div>
             <label className="block font-medium text-gray-800 mb-1">Company name</label>
             <input
+              name="company"
               type="text"
               placeholder="Company name"
               className="w-full border border-gray-300 rounded-md px-4 py-2"
@@ -55,8 +66,10 @@ export default function ContactForm() {
           <div>
             <label className="block font-medium text-gray-800 mb-1">Message</label>
             <textarea
+              name="message"
               placeholder="Message"
               rows={4}
+              required
               className="w-full border border-gray-300 rounded-md px-4 py-2"
             />
           </div>

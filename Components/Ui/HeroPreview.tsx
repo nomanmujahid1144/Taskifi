@@ -27,22 +27,23 @@ export default function HeroPreview() {
           <p className="text-white mb-12 text-base xl:text-lg  text-left  md:max-w-sm xl:max-w-lg">
            Taskifi removes the friction from everyday work by unifying teams, tools, and tasks in one intelligent platform. Experience effortless collaboration, smart automation, and full visibility built for the future of business.
           </p>
-          <Button variant="solid" href="#">
+          <Button variant="solid" href="https://app.taskifi.io/signup">
             Get Started. It's Free!
           </Button>
         </div>
       </div>
 
-      {/* Right-side "Computer Screen" with partial view */}
+      {/* Right-side image - smaller so fully visible */}
       <div>
         <div
-          className="md:absolute md:top-1/2 right-[-10%] md:translate-y-[-50%] h-auto w-full md:w-[55vw]  2xl:max-w-[900px] 
-        2xl:max-h-[600px]  rounded-xl border-8 border-[#FFFFFF7A] backdrop-blur-sm overflow-hidden z-0 custom-shadow-blue pointer-events-none  md:block"
+          className="md:absolute md:top-1/2 right-0 md:translate-y-[-50%] h-auto w-full max-w-[380px] md:max-w-[420px] lg:max-w-[480px] 2xl:max-w-[520px] rounded-xl border-8 border-[#FFFFFF7A] backdrop-blur-sm overflow-hidden z-0 custom-shadow-blue md:block mx-auto md:mx-0"
         >
-          <img
-            src="/heropreview.gif"
-            alt="Taskifi Preview"
-            className="w-full h-full object-cover"
+          <Image
+            src="/ref-solved-with-ai.png"
+            alt="Tasks solved with AI"
+            width={520}
+            height={520}
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>
