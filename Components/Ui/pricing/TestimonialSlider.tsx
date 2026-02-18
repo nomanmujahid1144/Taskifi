@@ -11,25 +11,25 @@ import { LuChevronRight, LuChevronLeft } from "react-icons/lu";
 
 const testimonials = [
   {
-    title: "GrowthHub",
+    title: "Nexus Labs",
     content:
-      "GrowthHub partnered with us to improve performance across their sales and procurement functions. Through our AI Optimization service, we assessed their current workflows, identified inefficiencies, and deployed Taskifi’s AI tools to streamline operations and support smarter decision-making.",
+      "Taskifi's AI project planner transformed how we run delivery. We use AI-driven budgeting and workload forecasting to keep projects on track, and resource management to match the right people to the right tasks. We've cut planning time and eliminated spreadsheets—our teams focus on delivery, not coordination.",
     image: "/aiOptimization/growthHub.png",
     person: {
       image: "/testimonials/man1.webp",
-      name: "Alex Johnson",
-      role: "Chief Operations Officer at GrowthHub",
+      name: "Karim Chen",
+      role: "Head of Project Delivery at Nexus Labs",
     },
   },
   {
-    title: "GrowthHub",
+    title: "BuildRight Co.",
     content:
-      "GrowthHub partnered with us to improve performance across their sales and procurement functions. Through our AI Optimization service, we assessed their current workflows, identified inefficiencies, and deployed Taskifi’s AI tools to streamline operations and support smarter decision-making.",
+      "Resource planning used to be a bottleneck. With Taskifi we forecast demand, avoid overloading people, and see utilization at a glance. The AI project budgeting helps us allocate funds and keep projects on budget from day one. It's become essential for our operations.",
     image: "/aiOptimization/growthHub.png",
     person: {
       image: "/testimonials/man1.webp",
-      name: "Alex Johnson",
-      role: "Chief Operations Officer at GrowthHub",
+      name: "Marcus Webb",
+      role: "Chief Operations Officer at BuildRight Co.",
     },
   },
 ];

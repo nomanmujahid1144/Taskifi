@@ -51,8 +51,8 @@ export default function LogoMarquee({
               <Image
                 src={item as string}
                 alt={`logo-${idx}`}
-                width={160}
-                height={40}
+                width={100}
+                height={28}
                 className={`object-contain ${isDark ? "grayscale invert" : ""}`}
               />
             </div>

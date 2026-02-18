@@ -33,7 +33,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -49,7 +49,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -65,7 +65,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -81,7 +81,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -97,7 +97,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -189,7 +189,7 @@ const page = () => {
                 assignment logic, and cost forecasting.
               </p>
               <div className="flex">
-                <Button variant="solid" href="#">
+                <Button variant="solid" href="https://app.taskifi.io/signup">
                   Get Started
                 </Button>
               </div>
@@ -203,8 +203,8 @@ const page = () => {
         2xl:max-h-[600px]  rounded-xl border-8 border-[#FFFFFF7A] backdrop-blur-sm overflow-hidden z-0 custom-shadow-blue pointer-events-none  md:block"
             >
               <img
-                src="/ProjectManagement/projecthero.png"
-                alt="Taskifi Preview"
+                src="/ProjectManagement/ref-rfp-to-plans.png"
+                alt="Taskifi project and task management"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -273,8 +273,8 @@ const page = () => {
         2xl:max-h-[600px]  rounded-xl border-8 border-[#FFFFFF7A] backdrop-blur-sm overflow-hidden z-0 custom-shadow-blue pointer-events-none  md:block"
             >
               <img
-                src="/ProjectManagement/projecthero.png"
-                alt="Taskifi Preview"
+                src="/ProjectManagement/ref-budget-dashboard.png"
+                alt="AI-Powered Project Planning - Budget and phases"
                 className="w-full h-full object-cover"
               />
             </div>
