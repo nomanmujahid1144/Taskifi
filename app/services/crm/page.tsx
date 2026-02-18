@@ -256,7 +256,7 @@ const page = () => {
             <Button
               variant="solid"
               className="w-auto whitespace-nowrap"
-              href="#"
+              href="https://app.taskifi.io/signup"
             >
               Get Started
             </Button>
@@ -451,11 +451,11 @@ const page = () => {
               Start unifying your data, teams, and tools with Taskifi Smart CRM.
             </h2>
             <div className="flex flex-col md:flex-row gap-4">
-              <Button href="#" className="text-center" variant="solid">
+              <Button href="/#contact" className="text-center" variant="solid">
                 {" "}
                 Get a demo
               </Button>
-              <Button href="#" className="text-center" variant="outline">
+              <Button href="https://app.taskifi.io/signup" className="text-center" variant="outline">
                 {" "}
                 Get started free
               </Button>

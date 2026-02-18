@@ -104,7 +104,7 @@ export default function page() {
               <Button
                 variant="solid"
                 className="w-auto whitespace-nowrap flex justify-center items-center gap-2"
-                href="#"
+                href="https://app.taskifi.io/signup"
               >
                 Get Started
                 <FaArrowRight />
@@ -157,13 +157,13 @@ export default function page() {
           <div
             className={`flex flex-col md:flex-row-reverse items-center gap-8`}
           >
-            <div className="flex justify-center md:w-1/2 w-full">
+            <div className="flex justify-center md:w-1/2 w-full bg-transparent">
               <Image
                 src="/marketing/group.png"
-                alt="bunch of cards"
+                alt="Document upload and processing workflow cards"
                 width={500}
                 height={600}
-                className="!w-full h-full"
+                className="!w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col items-start gap-6 md:w-1/2 w-full text-center md:text-left">
@@ -204,13 +204,13 @@ export default function page() {
           <div
             className={`flex flex-col md:flex-row-reverse items-center gap-8`}
           >
-            <div className="flex justify-center md:w-1/2 w-full">
+            <div className="flex justify-center md:w-1/2 w-full bg-transparent">
               <Image
                 src="/marketing/group.png"
-                alt="bunch of cards"
+                alt="Document upload and processing workflow cards"
                 width={500}
                 height={600}
-                className="!w-full h-full"
+                className="!w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col items-start gap-6 md:w-1/2 w-full text-center md:text-left">

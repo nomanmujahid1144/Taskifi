@@ -297,7 +297,7 @@ export default function HeroSection() {
               <FaArrowRight className="text-white group-hover:translate-x-1 transition-transform duration-200" />
             </motion.span>
           </Button>
-          <Button variant="white" href="#" className="border-none !text-black hover:bg-gray-100 transition-colors">
+          <Button variant="white" href="/#contact" className="border-none !text-black hover:bg-gray-100 transition-colors">
             Get a Demo
           </Button>
         </motion.div>

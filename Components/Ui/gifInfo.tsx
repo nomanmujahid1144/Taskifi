@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "../Common/Button";
-import { FaPlayCircle } from "react-icons/fa";
 import Blob from "../Common/Blob";
 
 export default function gifInfo() {
@@ -25,30 +24,21 @@ export default function gifInfo() {
               className="border border-primary px-4 py-3 md:w-[70%] w-full rounded-md  flex-1 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
             <div className="flex gap-2">
-              <Button variant="solid" type="button">
+              <Button variant="solid" href="https://app.taskifi.io/signin">
                 Sign In
-              </Button>
-              <Button
-                className="flex items-center gap-2"
-                variant="outline"
-                type="button"
-              >
-                <FaPlayCircle className="text-xl" />
-                watch demo
               </Button>
             </div>
           </form>
         </div>
 
-        {/* GIF/Image */}
+        {/* Testimonial cards image */}
         <div className="flex justify-center relative">
           <Image
-            src="/heropreview.gif"
-            alt="Dashboard preview"
+            src="/ref-testimonials-cards.png"
+            alt="Taskifi testimonials"
             width={600}
             height={400}
-            className="rounded-xl shadow-xl"
-            unoptimized
+            className="rounded-xl object-contain"
           />
         </div>
       </div>

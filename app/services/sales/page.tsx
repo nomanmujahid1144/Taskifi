@@ -166,7 +166,7 @@ const page = () => {
           <WorkSelector />
           <Button
             variant="solid"
-            href="#"
+            href="https://app.taskifi.io/signup"
             className="flex items-center px-10 gap-2"
           >
             Get Started

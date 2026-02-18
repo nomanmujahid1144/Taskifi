@@ -11,14 +11,11 @@ import GifWithQuote from "@/Components/Ui/gifWithQuote";
 import InfoCards from "@/Components/Ui/FourCards";
 
 const images = [
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
+  "/logo/bblessed.svg",
+  "/logo/reve (1).svg",
+  "/logo/muc (1).svg",
+  "/logo/muc (2).svg",
+  "/logo/cedars-medicare-logo1-YZ9x89VaV8iMZBnz.jpg",
 ];
 const cards = [
   {
@@ -63,22 +60,22 @@ const infoCards = [
   {
     title: "Tech Startups",
     description: "Manage projects & automate workflows.",
-    image: "/frames/frame3.webp",
+    image: "/frames/tech-startups.png",
   },
   {
     title: "Construction Firms & Contractors",
     description: "Track resources & expenses.",
-    image: "/frames/frame2.webp",
+    image: "/frames/construction.png",
   },
   {
     title: "Retail & E-Commerce",
     description: "Optimize inventory, sales, and CRM.",
-    image: "/frames/frame3.webp",
+    image: "/frames/retail-ecommerce.png",
   },
   {
     title: " Marketing Agencies",
     description: "AI-powered campaign automation.",
-    image: "/frames/frame1.webp",
+    image: "/frames/marketing-agencies.png",
   },
 ];
 
@@ -98,7 +95,7 @@ export default function Home() {
       <div className="py-16">
         <LogoMarquee type="image" images={images} />
         <p className=" font-normal text-text-secondary md:leading-1.5 text-center px-6 mt-8">
-          TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE
+          TRUSTED BY 100+ ORGANIZATIONS WORLDWIDE
         </p>
       </div>
       <div className="main-cont">
@@ -116,14 +113,13 @@ export default function Home() {
       <div className="main-cont">
         <div className="text-center mb-12 ">
           <h2 className="component-heading">
-            The Intelligent Sales Management Platform
+            AI-Powered Project & Resource Management
           </h2>
           <p className="text-text-secondary 2xl:text-lg  mt-10 max-w-2xl mx-auto">
-            Taskifi transforms how businesses generate and close deals by
-            combining AI-powered lead generation, personalized outreach, and
-            automated follow-ups. Gain complete visibility into your pipeline,
-            streamline collaboration between sales teams, and unlock new paths
-            to revenue growth with Taskifi.
+            Taskifi helps teams plan smarter with AI-driven project budgeting,
+            resource allocation, and workload forecasting. Keep projects on
+            track, match the right people to the right tasks, and eliminate
+            spreadsheets—so your team can focus on delivery, not coordination.
           </p>
         </div>
         <GifWithQuote />

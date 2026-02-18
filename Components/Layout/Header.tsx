@@ -61,7 +61,7 @@ const submenuData = {
   //     href: "/services/crm",
   //   },
   // ],
-  Sales: [
+  "Sales (coming soon)": [
     {
       icon: (
         <MdOutlineAttachMoney className="mr-2 lg:text-2xl text-purple-700" />
@@ -343,6 +343,7 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
 
+                {/* Help - commented out for now
                 <Link
                   href="/help"
                   className={` transition-colors relative ${isAIPage
@@ -360,6 +361,7 @@ export default function Header() {
                     />
                   )}
                 </Link>
+                */}
               </div>
             </div>
 
@@ -379,10 +381,10 @@ export default function Header() {
 
             {/* Right buttons: show from xl and above */}
             <div className="hidden xl:flex items-center  space-x-4">
-              <Button className="bg-white !rounded-2xl" variant="outline" href="https://app.taskifi.io/signin">
+              <Button className="bg-white !rounded-2xl !py-2.5" variant="outline" href="https://app.taskifi.io/signin">
                 Sign in
               </Button>
-              <Button variant="solid" className="!rounded-2xl" href="/get-started">
+              <Button variant="solid" className="!rounded-2xl !py-2.5" href="https://app.taskifi.io/signup">
                 Get started
               </Button>
             </div>
@@ -504,25 +506,27 @@ export default function Header() {
                     )}
                   </div>
 
+                  {/* Help - commented out for now
                   <Link
                     href="/help"
                     className="block text-lg font-medium text-gray-700 hover:text-primary"
                   >
                     Help
                   </Link>
+                  */}
 
                   <div className="flex flex-col mt-4 space-y-2">
                     <Button
                       variant="outline"
                       href="https://app.taskifi.io/signin"
-                      className="w-full text-center mt-4 bg-white"
+                      className="w-full text-center mt-4 bg-white !py-2.5"
                     >
                       Sign in
                     </Button>
                     <Button
                       variant="solid"
-                      href="/get-started"
-                      className="w-full text-center mt-2"
+                      href="https://app.taskifi.io/signup"
+                      className="w-full text-center mt-2 !py-2.5"
                     >
                       Get started
                     </Button>

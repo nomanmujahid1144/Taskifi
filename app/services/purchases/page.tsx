@@ -34,7 +34,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -50,7 +50,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -66,7 +66,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -82,7 +82,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -98,7 +98,7 @@ const faqData = [
     openIcon: <IoIosArrowUp className="text-white text-2xl" />,
     closeIcon: <IoIosArrowDown className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -209,7 +209,7 @@ const page = () => {
             <Button
               variant="solid"
               className="w-auto whitespace-nowrap"
-              href="#"
+              href="https://app.taskifi.io/signup"
             >
               Get Started
             </Button>

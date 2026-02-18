@@ -128,9 +128,9 @@ export default function page() {
 
               <div className="bg-white/30  lg:w-[953px] border mx-auto h-fit   border-white backdrop:blur-2xl rounded-2xl p-1">
                 <img
-                  src="/ai/screen1.png"
+                  src="/ai/ref-gantt.png"
                   className="w-full h-auto rounded-xl object-contain"
-                  alt=""
+                  alt="Project timeline and planning"
                 />
               </div>
             </section>
@@ -190,16 +190,16 @@ export default function page() {
             </div>
           </div>
 
-          {/* Right-side "Computer Screen" with partial view */}
+          {/* Right-side "Computer Screen" with partial view (Peka / Project Assistant) */}
           <div>
             <div
               className="md:absolute md:top-1/2 right-[-10%] md:translate-y-[-50%] h-auto w-full md:w-[55vw]  lg:max-h-[500px]  2xl:max-w-[900px] 
         2xl:max-h-[600px]  rounded-xl border-8 border-[#FFFFFF7A] backdrop-blur-sm overflow-hidden z-0 custom-shadow-blue pointer-events-none  md:block"
             >
               <img
-                src="/ai/screen2.png"
-                alt="Taskifi Preview"
-                className="w-full h-full "
+                src="/ai/ref-peka.png"
+                alt="Project Assistant chat"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
@@ -245,8 +245,8 @@ export default function page() {
         <div className="relative container mx-auto flex px-6 lg:px-0 flex-col lg:flex-row justify-end lg:gap-36 gap-16 items-center overflow-hidden min-h-[700px] py-16">
           <div className=" lg:absolute  lg:-left-[30%] xl:-left-[20%] 2xl:left-0 bg-white/30   border border-white rounded-2xl lg:rounded-l-none lg:border-l-transparent p-2 lg:pl-0 ">
             <img
-              src="/ai/screen3.png"
-              alt="Taskifi Preview"
+              src="/ai/ref-crm-insights.png"
+              alt="Contact insights and CRM"
               className="2xl:w-[622px] 2xl:h-[609px] min-h-[500px] object-cover rounded-xl lg:rounded-l-none m-0 object-right"
             />
           </div>

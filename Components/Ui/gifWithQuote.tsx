@@ -1,17 +1,20 @@
+"use client";
 import Image from "next/image";
 import Button from "../Common/Button";
 import { ImQuotesLeft } from "react-icons/im";
 import { FaCheckCircle } from "react-icons/fa";
+import { useRef, useEffect } from "react";
 
 const quoteData = [
   {
-    title: "1.AI Outbound for Smarter Growth",
+    title:
+      "1.Plan Projects With <span class='animate-gradient'>AI Precision</span>",
     description:
-      "Generate qualified leads and reach them with personalized email sequences or direct messages—automatically. Taskifi’s AI Outbound helps you scale outreach without losing the human touch.",
+      "From launches to client deliverables, Taskifi adapts. Build workflows, track milestones, and manage teams - all powered by AI-driven project budgeting to keep projects on track.",
     features: [
-      "AI-Powered Lead Generation",
-      "Personalized Outreach at Scale",
-      "Automated Sequences & Tracking",
+      "Modular Views (List, Board, Timeline)",
+      "AI Project Budgeting",
+      "Role-Based Permissions",
     ],
     quote: "",
     author: "",
@@ -31,14 +34,13 @@ const quoteData = [
     buttonLabel: "Start your free trial – no setup required",
   },
   {
-    title:
-      "3.Plan Projects With <span class='animate-gradient'>AI Precision</span>",
+    title: "3.AI Outbound for Smarter Growth (coming soon)",
     description:
-      "From launches to client deliverables, Taskifi adapts. Build workflows, track milestones, and manage teams—all powered by AI-driven project budgeting to keep projects on track.",
+      "Generate qualified leads and reach them with personalized email sequences or direct messages—automatically. Taskifi's AI Outbound helps you scale outreach without losing the human touch.",
     features: [
-      "Modular Views (List, Board, Timeline)",
-      "AI Project Budgeting",
-      "Role-Based Permissions",
+      "AI-Powered Lead Generation",
+      "Personalized Outreach at Scale",
+      "Automated Sequences & Tracking",
     ],
     quote: "",
     author: "",
@@ -60,6 +62,18 @@ const quoteData = [
 ];
 
 export default function GifInfo() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const setSpeed = () => {
+      video.playbackRate = 1.1;
+    };
+    video.addEventListener("loadedmetadata", setSpeed);
+    if (video.readyState >= 1) setSpeed();
+    return () => video.removeEventListener("loadedmetadata", setSpeed);
+  }, []);
+
   return (
     <section className=" bg-white py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-16">
@@ -114,7 +128,7 @@ export default function GifInfo() {
               {item.buttonLabel && (
                 <Button
                   variant="solid"
-                  type="button"
+                  href="https://app.taskifi.io/signup"
                   className=" text-xs md:text-sm lg:text-[16px]"
                 >
                   {item.buttonLabel}
@@ -124,15 +138,25 @@ export default function GifInfo() {
           ))}
         </div>
 
-        {/* 📽️ Right Side GIF/Image */}
-        <div className="md:sticky top-24 self-start">
-          <Image
-            src="/heropreview.gif"
-            alt="Dashboard preview"
-            width={658}
-            height={400}
-            className="rounded-xl shadow-xl"
-            unoptimized
+        {/* 📽️ Right Side Video - auto-playing loop, controls for sound */}
+        <div className="md:sticky top-24 self-start relative w-full max-w-[1100px] rounded-xl overflow-hidden [box-shadow:0_0_0_1px_rgba(0,0,0,0.05),0_10px_15px_-3px_rgba(0,0,0,0.2),0_25px_50px_-12px_rgba(0,0,0,0.5),0_40px_80px_-20px_rgba(0,0,0,0.6)]">
+          <video
+            ref={videoRef}
+            src="/videos/taskifi-ai-project-planning.mp4"
+            autoPlay
+            loop
+            playsInline
+            controls
+            className="w-full rounded-xl aspect-video object-cover block"
+          >
+            Your browser does not support the video tag.
+          </video>
+          {/* Completely black from below, then blends upward */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-[70%] rounded-b-xl pointer-events-none"
+            style={{
+              background: "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 12%, rgba(0,0,0,0.5) 28%, rgba(0,0,0,0.15) 50%, transparent 100%)",
+            }}
           />
         </div>
       </div>

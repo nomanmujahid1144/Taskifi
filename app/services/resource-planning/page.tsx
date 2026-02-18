@@ -31,8 +31,9 @@ const faqData2 = [
     title: "Cost Estimation Engine",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Taskifi estimates project cost from scope and resources automatically.
+        Set phases, budgets, and rates — then track spend vs. plan in real time
+        with alerts before you overspend.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -42,8 +43,9 @@ const faqData2 = [
     title: "Deliverable Forecasting",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Our AI analyzes project scope and timelines to predict key deliverables
+        and milestones. You get early visibility into what will be delivered
+        when, so you can align stakeholders and adjust plans proactively.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -53,8 +55,9 @@ const faqData2 = [
     title: "Multi-Board Planning",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Manage multiple projects or portfolios from a single place. Create
+        separate boards for teams, clients, or initiatives and see capacity,
+        progress, and dependencies across all of them in one view.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -64,8 +67,10 @@ const faqData2 = [
     title: "Live AI Assistant (Zeta)",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Zeta is your in-app AI assistant for planning and resourcing. Ask
+        questions in plain language, get suggestions for task assignment and
+        scheduling, and surface risks or bottlenecks without leaving your
+        workflow.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -214,7 +219,7 @@ const page = () => {
                 type="button"
                 variant="solid"
                 className="w-fit text-base md:text-lg font-semibold"
-                href="/services/resource-planning"
+                href="https://app.taskifi.io/signup"
               >
                 Get Started
               </Button>
@@ -339,9 +344,9 @@ const page = () => {
           </div>
 
           <img
-            src="/ProjectManagement/budgeting.png"
+            src="/resourcePlanning/ref-timesheet-dashboard.png"
             className="w-full h-auto object-contain border-4 border-black rounded-2xl mb-16"
-            alt=""
+            alt="Taskifi timesheet and resource utilization dashboard"
           />
 
           <h3 className="text-text-secondary text-xl lg:text-2xl font-bold text-center max-w-4xl mx-auto ">
@@ -367,7 +372,7 @@ const page = () => {
             </p>
 
             <div className="flex justify-center md:justify-start">
-              <Button variant="solid" href="#" className="w-fit">
+              <Button variant="solid" href="https://app.taskifi.io/signup" className="w-fit">
                 Try Taskifi
               </Button>
             </div>
