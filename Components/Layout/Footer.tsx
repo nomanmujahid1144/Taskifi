@@ -48,16 +48,6 @@ export default function Footer() {
       ]
     },
     {
-      heading: "Sales and Outreach",
-      links: [
-        { text: "AI for Sales & Outreach", href: "/marketing" },
-        { text: "Outbound Engine with AI", href: "/marketing" },
-        { text: "AI Email Campaigns", href: "/marketing" },
-        { text: "Lead Finder & Sequencer", href: "/marketing" },
-        { text: "Real-Time Tracking & Analytics", href: "/services/crm" }
-      ]
-    },
-    {
       heading: "Project Management",
       links: [
         { text: "Task Management", href: "/services/project-management" },
@@ -83,9 +73,9 @@ export default function Footer() {
         { text: "Live AI Assistant (Zeta)", href: "/help" },
         { text: "Help Center", href: "/help" },
         { text: "On-Demand Demo", href: "/#contact" },
-        { text: "Get Started", href: "https://taskifi-client.vercel.app" },
-        { text: "Sign In", href: "https://taskifi-client.vercel.app" },
-        { text: "Sign Up", href: "https://taskifi-client.vercel.app" }
+        { text: "Get Started", href: "https://app.taskifi.io/signup" },
+        { text: "Sign In", href: "https://app.taskifi.io/signin" },
+        { text: "Sign Up", href: "https://app.taskifi.io/signup" }
       ]
     }
   ];

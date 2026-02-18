@@ -15,7 +15,7 @@ const faqData = [
     openIcon: <IoArrowUpOutline className="text-white text-2xl" />,
     closeIcon: <IoArrowForwardOutline className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -31,7 +31,7 @@ const faqData = [
     openIcon: <IoArrowUpOutline className="text-white text-2xl" />,
     closeIcon: <IoArrowForwardOutline className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -47,7 +47,7 @@ const faqData = [
     openIcon: <IoArrowUpOutline className="text-white text-2xl" />,
     closeIcon: <IoArrowForwardOutline className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),
@@ -63,7 +63,7 @@ const faqData = [
     openIcon: <IoArrowUpOutline className="text-white text-2xl" />,
     closeIcon: <IoArrowForwardOutline className="text-white text-2xl" />,
     button: (
-      <Button variant="solid" className="mt-3" href="#">
+      <Button variant="solid" className="mt-3" href="https://app.taskifi.io/signup">
         Get Started
       </Button>
     ),

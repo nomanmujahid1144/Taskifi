@@ -104,7 +104,7 @@ export default function Hero() {
     <section className="relative bg-bg-grey overflow-hidden lg:container mx-auto px-2">
       <div className="mx-auto  pt-10 md:pb-[500px] pb-12 relative z-10 text-center">
         <h1 className="text-3xl  md:text-5xl 2xl:text-6xl font-bold font-caecilia text-text-primary leading-tight md:max-w-4xl  2xl:max-w-5xl mx-auto">
-          <span className="animate-gradient">From AI to ROI:</span> Your All-in-One AI Sales Growth Platform.
+          <span className="animate-gradient">From AI to ROI:</span> Transform Contracts into Execution-Ready Project Plans.
         </h1>
         <p className="text-text-secondary text-base mt-4">
           Did you know most companies lose over
@@ -112,15 +112,15 @@ export default function Hero() {
           of their productivity to manual workflows?
         </p>
         <div className="mt-10 flex justify-center gap-4">
-          <Button variant="solid" href="#">
+          <Button variant="solid" href="https://app.taskifi.io/signup">
             Try it's Free
           </Button>
-          <Button variant="outline" href="#">
+          <Button variant="outline" href="/#contact">
             Request a Demo
           </Button>
         </div>
         <p className="text-text-secondary mt-6 text-xs md:text-sm">
-          No credit card needed ✦ Unlimited time on Free plan
+          No credit card needed ✦ Get started for free
         </p>
       </div>
 
@@ -166,7 +166,7 @@ export default function Hero() {
           </div>
           <Button
             variant="solid"
-            href="#"
+            href="https://app.taskifi.io/signup"
             className="flex items-center justify-center gap-2 w-full"
           >
             Get Started

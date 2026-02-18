@@ -122,7 +122,7 @@ const FeatureComponent = () => {
               type="button"
               variant="solid"
               className="w-fit text-base font-semibold mt-auto"
-              href="/services/resource-planning"
+              href="https://app.taskifi.io/signup"
             >
               Get Started
             </Button>

@@ -26,14 +26,11 @@ import {
 import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 
 const images = [
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
-  "/booking.svg",
-  "/econmy.png",
+  "/logo/bblessed.svg",
+  "/logo/reve (1).svg",
+  "/logo/muc (1).svg",
+  "/logo/muc (2).svg",
+  "/logo/cedars-medicare-logo1-YZ9x89VaV8iMZBnz.jpg",
 ];
 const faqData2 = [
   {
@@ -47,23 +44,14 @@ const faqData2 = [
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
     closeIcon: <FiPlusCircle className="text-text-secondary text-2xl" />,
   },
-  {
-    title: "Cost Estimation Engine",
-    content: (
-      <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
-      </p>
-    ),
-    openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
-    closeIcon: <FiPlusCircle className="text-text-secondary text-2xl" />,
-  },
+
   {
     title: "Deliverable Forecasting",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Our AI analyzes project scope and timelines to predict key deliverables
+        and milestones. You get early visibility into what will be delivered
+        when, so you can align stakeholders and adjust plans proactively.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -73,8 +61,9 @@ const faqData2 = [
     title: "Multi-Board Planning",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Manage multiple projects or portfolios from a single place. Create
+        separate boards for teams, clients, or initiatives and see capacity,
+        progress, and dependencies across all of them in one view.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -84,8 +73,10 @@ const faqData2 = [
     title: "Live AI Assistant (Zeta)",
     content: (
       <p>
-        Yes, you can try us for free for 30 days. If you want, we’ll provide a
-        personalized onboarding call.
+        Zeta is your in-app AI assistant for planning and resourcing. Ask
+        questions in plain language, get suggestions for task assignment and
+        scheduling, and surface risks or bottlenecks without leaving your
+        workflow.
       </p>
     ),
     openIcon: <FiMinusCircle className="text-text-secondary text-2xl" />,
@@ -295,7 +286,7 @@ const cardData = [
       "A smart project management solution designed for growing teams—manage tasks, timelines, and milestones with AI-powered insights.",
     iconColor: "#FFC046",
     title: "Taskifi Projects",
-    link: "#",
+    link: "https://app.taskifi.io/signup",
     linkText: "Explore",
   },
   {
@@ -317,7 +308,7 @@ const cardData = [
       "A scalable CRM platform to streamline customer relationships, automate workflows, and boost conversions with smart suggestions.",
     iconColor: "#008EFF",
     title: "Taskifi CRM",
-    link: "#",
+    link: "https://app.taskifi.io/signup",
     linkText: "Explore",
   },
   {
@@ -339,7 +330,7 @@ const cardData = [
       "A complete purchasing module with built-in AI for vendor recommendations, purchase planning, and order tracking.",
     iconColor: "#45C646",
     title: "Taskifi Purchases",
-    link: "#",
+    link: "https://app.taskifi.io/signup",
     linkText: "Explore",
   },
 ];
@@ -379,6 +370,9 @@ export default function page() {
           The standard and custom plans include all apps for a single fee.
         </h2>
 
+        {/* Sales, Marketing, Purchase, CRM, etc. - commented out for now */}
+        {false && (
+        <>
         <div className="flex flex-wrap justify-center gap-8 mb-4">
           {apps.map((app, i) => {
             const Icon = app.icon;
@@ -406,6 +400,8 @@ export default function page() {
         >
           Add many more <FaArrowRight className="text-sm" />
         </a>
+        </>
+        )}
 
         <div className="text-gray-700 text-sm  mx-auto">
           <p className="font-semibold text-text-primary text-2xl">
@@ -428,9 +424,11 @@ export default function page() {
         </div>
         <Button variant="solid" className="mt-8">Meet an advisor</Button>
       </section>
+      {/* Cut Costs with Taskifi section - commented out for now
       <div className="container mx-auto py-16 relative px-6  lg:px-10 xl:px-24 2xl:max-w-screen-xl 2xl:px-6">
         <CutCosts />
       </div>
+      */}
       <div className="container mx-auto py-16 relative px-6  lg:px-10 xl:px-24 2xl:max-w-screen-xl 2xl:px-6">
         <div className="text-center mb-12 mx-auto w-full max-w-5xl justify-center items-center flex-col flex gap-8 px-6">
           <h1 className="font-bold text-text-primary xl:text-5xl text-3xl text-center">

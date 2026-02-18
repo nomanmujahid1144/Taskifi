@@ -80,7 +80,7 @@ const ExpenseFeatures = ({
                 </p>
               )}
               {showButton && (
-                <Button variant="solid" className="w-fit" href="#">
+                <Button variant="solid" className="w-fit" href="https://app.taskifi.io/signup">
                   {buttonText}
                 </Button>
               )}

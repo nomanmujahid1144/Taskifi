@@ -34,7 +34,7 @@ const BudgetingSection = () => {
         </p>
       </div>
 
-    <img src="/ProjectManagement/budgeting.png" className='w-full h-auto object-contain border-4 border-black rounded-2xl mb-16' alt="" />
+    <img src="/ProjectManagement/ref-ai-planner.png" className='w-full h-auto object-contain border-4 border-black rounded-2xl mb-16' alt="AI Project Planner - Set Project Constraints" />
      
 
     <div className="grid md:grid-cols-3 gap-8">

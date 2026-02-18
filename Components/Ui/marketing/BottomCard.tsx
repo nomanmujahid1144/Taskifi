@@ -11,7 +11,7 @@ export default function BottomCard() {
             Everything you need to sell, scale, and succeed
           </h3>
           <div className="flex mt-12 flex-col lg:flex-row gap-4">
-            <Button variant="white" className="!border-none !text-black">
+            <Button variant="white" href="https://app.taskifi.io/signup" className="!border-none !text-black">
               Get Started for Free
             </Button>
             <Button

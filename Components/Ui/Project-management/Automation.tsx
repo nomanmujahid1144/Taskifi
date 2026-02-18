@@ -75,7 +75,7 @@ const AutomationsComponent: FC = () => {
           No credit card. No setup hassle. Just instant clarity.
         </p>
         <div className="flex justify-center">
-          <Button variant="solid" href="#" >
+          <Button variant="solid" href="https://app.taskifi.io/signup" >
             Get started – it's free
           </Button>
         </div>
